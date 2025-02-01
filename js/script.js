@@ -18,6 +18,8 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     })
   .then(function(response) {
     alert('Message sent successfully!', response);
+    document.getElementById('contact-form')
+    document.getElementById('contact-form').reset();
   }, function(error) {
     alert('Failed to send message. Please try again.', error);
   });
